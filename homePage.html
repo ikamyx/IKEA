@@ -10,7 +10,50 @@
         <link rel=stylesheet href="css/main.css">
         <link rel=stylesheet href="css/homePage.css">
 </head>
-<body>  
+<body>
+        <section id="productDetail">
+            <section id="productNav">
+                <nav>
+                    <a class="full" href="javascript:void(0)">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" class="svg-icon  hnf-svg-icon hnf-svg-bag-default hnf-btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 4h-.563l-.292.48-3.357 5.517H1.72l.31 1.243 1.621 6.485a3 3 0 002.91 2.272H17.44a3 3 0 002.91-2.272l1.621-6.485.31-1.243h-5.069L13.854 4.48 13.562 4H11zm3.87 5.997L12.438 6h-.876L9.129 9.997h5.741zM5.591 17.24l-1.31-5.243h15.438l-1.31 5.243a1 1 0 01-.97.757H6.562a1 1 0 01-.97-.757z" fill="#111111"></path>
+                        </svg>
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" class="svg-icon  hnf-svg-icon hnf-svg-bag-added hnf-btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.437 4h3.125l.292.48 3.357 5.517h5.069l-.31 1.243-.69 2.76h-2.06l.5-2.003H4.281l1.31 5.243a1 1 0 00.97.757H15v2H6.562a3 3 0 01-2.91-2.272L2.03 11.24l-.31-1.243h5.068l3.357-5.517.292-.48zm2 2l2.433 3.997H9.13L11.56 6h.877z" fill="#111111"></path>
+                             <path d="M21 17.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" fill="#0058A3"></path>
+                        </svg>
+                        <span>2</span></a>
+                </nav>
+            </section>
+            <figure>
+                <a href="javascript:void(0)">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" class="svg-icon  hnf-svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13.415l4.95 4.95 1.414-1.415-4.95-4.95 4.95-4.95-1.415-1.413-4.95 4.95-4.949-4.95L5.636 7.05l4.95 4.95-4.95 4.95 1.414 1.414 4.95-4.95z" fill="#111111"></path>
+                    </svg>
+                </a>
+            </figure> 
+            
+            <div id="slideShow">
+                <img src="" alt="">
+                <nav>
+                    <a class="selected" href="javascript:void"></a>
+                    <a href="javascript:void"></a>
+                    <a href="javascript:void"></a>
+                </nav>
+                <ul>
+                    <li></li>
+                    <li>-21%</li>
+                </ul>
+            </div>
+            <div id="detailInfo">
+                <span class="price">$78</span>
+                <h2>Coaches
+                    <span>by <span>Jamy X</span>.</span>
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="" class="add">Add to cart</a>
+            </div>
+        </section>
         <header>
             <div id="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="40" viewBox="0 0 100 40" version="1.1">
@@ -128,10 +171,65 @@
                     </li>
                 </ul>
             </section>
+
+            <section class="productCarousel" id="recommendedProductRow2">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/prod1.jpg" width="600px" height="auto" alt="">
+                        </a>
+                        <a href="">Sofa</a>
+                        <span>$132</span>
+                    </li>
+                    <li class="discount" data-discount="-30%">
+                        <a href="javascript:void(0)">
+                            <img src="img/prod2.png" width="550" height="auto" alt="">
+                        </a>
+                        <a href="">Bed</a>
+                        <span>$45</span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/prod3.jpg" width="550px" height="auto" alt="">
+                        </a>
+                        <a href="">Furniture</a>
+                        <span>$105</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="productCarousel" id="recommendedProductRow3">
+                <ul>
+                    <li class="discount" data-discount="-15%">
+                        <a href="javascript:void(0)">
+                            <img src="img/prod4.jpg" width="220px" height="auto" alt="">
+                        </a>
+                        <a href="">Coaches</a>
+                        <span>$132</span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/prod5.jpg" width="200px" height="auto" alt="">
+                        </a>
+                        <a href="">Bed</a>
+                        <span>$45</span>
+                    </li>
+                    <li class="discount" data-discount="-25%">
+                        <a href="javascript:void(0)">
+                            <img src="img/prod6.jpg" width="450px" height="auto" alt="">
+                        </a>
+                        <a href="">Furniture</a>
+                        <span>$45</span>
+                    </li>
+                </ul>
+            </section>
         </main>
         <section id="search">
-            <a href="javasscript:void(0)"></a>
-            <div>
+            <a href="javascript:void(0)">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" class="svg-icon  hnf-svg-icon" width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.98 15.395a6.294 6.294 0 111.414-1.414l4.602 4.601-1.414 1.414-4.602-4.601zm.607-5.101a4.294 4.294 0 11-8.587 0 4.294 4.294 0 018.587 0z"></path>
+                </svg>
+            </a>
+            <div id="searchExpand">
                 <input type="text">
             </div>
         </section>
