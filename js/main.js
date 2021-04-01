@@ -1,3 +1,7 @@
+
+
+
+
 document.querySelectorAll('.productCarousel li > a:first-child').forEach(d => {
     d.addEventListener('click', function() {
         let img = this.querySelector('img').getAttribute('src');

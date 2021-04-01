@@ -461,6 +461,21 @@ body.productExpand #productDetail {
     background-color: #5d443d;
 }
 
+#productDetail #slideShow.prod5 img {
+    height: auto;
+    width: 100%;
+}
+
+#productDetail #slideShow.prod5 ul li:first-child {
+    background-color: #ba9713;
+}
+
+#productDetail #slideShow.prod3 ul li:first-child {
+    background-color: #424347;
+}
+
+
+
 
 /*********************************/
 
