@@ -69,6 +69,10 @@ header {
     padding-left: 10px;
 }
 
+#logo svg {
+    cursor: pointer;
+}
+
 /* #logo:before {
     content: '';
     display: block;

@@ -21,3 +21,15 @@ document.querySelector("#topNav nav li:last-child").addEventListener('click', fu
     document.body.classList.remove('productExpand');
     e.stopPropagation();
 })
+
+document.querySelector("#topNav a li:first-child").addEventListener("click", () => {
+    window.location.href = "homePage.html";
+})
+
+document.querySelector("#logo svg").addEventListener("click", () => {
+    window.location.href = "homePage.html";
+})
+
+document.querySelector("#topNav a li:nth-child(2)").addEventListener("click", () => {
+    window.location.href = "addProduct.html";
+})
