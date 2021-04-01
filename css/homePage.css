@@ -447,6 +447,23 @@ body.productExpand #productDetail {
     height: 100%;
 }
 
+/*********************************/
+
+#productDetail #slideShow.prod2 img {
+    margin-left: -400px;
+}
+
+#productDetail #slideShow.prod2 ul li:first-child {
+    background-color: #ca9062;
+}
+
+#productDetail #slideShow.prod4 ul li:first-child {
+    background-color: #5d443d;
+}
+
+
+/*********************************/
+
 #productDetail #detailInfo {
     padding: 20px;
     position: absolute;

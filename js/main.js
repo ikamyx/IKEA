@@ -3,12 +3,16 @@ document.querySelectorAll('.productCarousel li > a:first-child').forEach(d => {
         let img = this.querySelector('img').getAttribute('src');
         document.querySelector('#productDetail img').setAttribute('src', img);
         document.body.classList.add('productExpand');
+        img = img.substring(4);
+        img = img.substring(0, 5)
+        document.querySelector("#productDetail #slideShow").classList.add(img);
         
     })
 })
 
 document.querySelector('#productDetail figure a').addEventListener('click', () => {
     document.body.classList.remove('productExpand');
+    document.querySelector("#productDetail #slideShow").classList = '';
 })
 
 document.querySelector('#navButton').addEventListener('click', function(e) {
