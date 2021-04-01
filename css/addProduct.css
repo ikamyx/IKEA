@@ -1,0 +1,129 @@
+body:after {
+    display: none;
+}
+
+main {
+    padding: 0 20px;
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+
+main:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+main h2 {
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+main form {
+    margin-top: 30px;
+}
+
+main form label {
+    /* display: inline-block; */
+    float: left;
+    clear: both;
+    margin-bottom: 30px;
+    margin-top: 6px;
+}
+
+main input[type="text"], main select, main input[type="date"] {
+    float: right;
+    width: 70%;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid #aaa;
+    color: inherit;
+}
+
+main #file {
+    float: right;
+    width: 70%;
+    overflow: hidden;
+}
+
+main input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+main input[type="file"]:before {
+    content: 'Upload a photo';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    background: #888;
+    /* border: 1px solid #999; */
+    border-radius: 3px;
+    padding: 8px 18px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    /* text-shadow: 1px 1px #fff; */
+    color: #fff;
+    /* font-weight: 700; */
+    font-size: 10pt;
+    font-family: 'Quicksand';
+}
+
+main input[type="file"]:hover:before {
+    border-color: #fff;
+}
+
+main input[type="file"]:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+main select {
+    padding-left: 10px;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+  }
+
+main select option {
+    display: block;
+    height: 30px;
+}
+
+main #photoBox {
+    clear: both;
+    width: 70%;
+    padding-bottom: calc(70%);
+    text-align: center;
+    border: 1px dashed grey;
+    float: right;
+    position: relative;
+}
+
+main #photoBox:before {
+    content: attr(data-message);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+main a {
+    margin-top: 20px;
+    clear: both;
+    width: 50%;
+    float: left;
+    margin-left: 30%;
+    background-color: #888;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

@@ -132,6 +132,39 @@ header {
 
 #topNav nav ul {
     display: none;
+    position: relative;
+    cursor: default;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 3;
+    padding-top: 80px;
+}
+
+#topNav nav ul.show {
+    display: block;
+}
+
+#topNav nav li {
+    font-size: 24px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#topNav nav li:last-child {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 3;
+}
+
+#topNav nav li:last-child svg {
+    width: 24px;
+    height: 24px;
 }
 
 #topNav figure {

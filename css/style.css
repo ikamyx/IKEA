@@ -3,6 +3,7 @@ body {
 }
 
 .mobileFrame {
+    float: left;
     width: calc(1170px * 0.3);
     height: calc(2532px * 0.3);
     background-color: #fff;
