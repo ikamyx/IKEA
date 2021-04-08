@@ -506,6 +506,44 @@ main {
     margin-left: 5px;
 }
 
+.productCarousel li > a:nth-child(4) {
+    font-size: 12px;
+    float: left;
+    clear: both;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.productCarousel li > a:nth-child(4) span.ikea {
+    font-weight: 700;
+    color: #0058ab;
+    background-color: #fbd914;
+    padding: 5px 10px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.productCarousel li > a:last-child {
+    width: 35px;
+    height: 35px;
+    background-color: #0058ab;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 155px;
+    right: 15px;
+}
+
+.productCarousel li > a:last-child svg {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.productCarousel li > a:last-child svg path {
+    color: #fff;
+}
+
 .productCarousel li > a:nth-child(2), .productCarousel li > span {
     margin-top: 10px;
 }
@@ -925,10 +963,17 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+#breadcrumb {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
 #breadcrumb a {
     float: left;
     line-height: 20px;
     height: 20px;
+    margin-left: 5px;
+    color: #888;
 }
 
 #breadcrumb a:first-child:before {
@@ -938,6 +983,7 @@ main {
 #breadcrumb a:before {
     content: '>';
     float: left;
+    margin-right: 5px;
 }
 
 
