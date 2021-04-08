@@ -52,5 +52,6 @@ document.querySelector("#topNav a li:nth-child(2)").addEventListener("click", ()
 })
 
 document.querySelector('#search a').addEventListener("click", () => {
+    document.body.classList.add('overlay');
     document.querySelector("#searchExpand").classList.add('show');
 })
