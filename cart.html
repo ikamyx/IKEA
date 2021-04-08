@@ -120,43 +120,133 @@
                 <figure>
                 </figure>
             </section>
+            <section id="breadcrumb">
+                <nav>
+                    <a href="homePage.html">Home</a>
+                    <a href="cart.html">Cart</a>
+                </nav>
+            </section>
         </header>
         <main>
             <h2>Shopping cart</h2>
-            <ul>
-                <li data-index="1">
-                    <a href="javascript:void(0)">
-                        <img src="img/prod1.jpg" alt="">
-                    </a>
-                    <div>
-                        <span href="javascript:void(0)">$123</span>
-                        <a href="javascript:void(0)">Couch</a>
-                        <span>By <span>Jammy X.</span></span>
-                        <figure>
-                            IKEA Gauranteed
-                        </figure>
-                    </div>
-                </li>
-                <li data-index="1">
-                    <a href="javascript:void(0)">
-                        <img src="img/prod2.png" alt="">
-                    </a>
-                    <div>
-                        <span href="javascript:void(0)">$307</span>
-                        <a href="javascript:void(0)">Bed</a>
-                        <span>By <span>Lina Z.</span></span>
-                    </div>
-                </li>
-            </ul>
-            <div id="total">Total 430$</div>
-            <div id="address">
-                <h3>Shipping</h3>
-                <p>To Christopher Nolan</p>
-                <p>No 124. Harlson street, Montreal QC</p>
-                <p>H2</p>
-                <a href="javascript:void(0)">Checkout</a>
+            <div id="stepWizard">
+                <nav>
+                    <a class="activated" href="javascript:void(0)"><span>Details</span></a>
+                    <a href="javascript:void(0)"><span>Payment</span></a>
+                    <a href="javascript:void(0)"><span>Confirm</span></a>
+                </nav>
+            </div>
+            <div class="pages activated" id="page1">
+                <ul>
+                    <li data-index="1">
+                        <a href="javascript:void(0)">
+                            <img src="img/prod1.jpg" alt="">
+                        </a>
+                        <div>
+                            <span href="javascript:void(0)">$123</span>
+                            <a href="javascript:void(0)">Couch</a>
+                            <span>By <span>Jammy X.</span></span>
+                            <figure>
+                                IKEA Gauranteed
+                            </figure>
+                        </div>
+                    </li>
+                    <li data-index="1">
+                        <a href="javascript:void(0)">
+                            <img src="img/prod2.png" alt="">
+                        </a>
+                        <div>
+                            <span href="javascript:void(0)">$307</span>
+                            <a href="javascript:void(0)">Bed</a>
+                            <span>By <span>Lina Z.</span></span>
+                        </div>
+                    </li>
+                </ul>
+                <div id="total">Total 430$</div>
+                <div id="address">
+                    <h3>Info</h3>
+                    <p>To Christopher Nolan</p>
+                    <p>email_by@email.com</p>
+                    <p>+199664455</p>
+                    <a href="javascript:void(0)">Next</a>
+                </div>
+            </div>
+            <div class="pages" id="page2">
+                <ul>
+                    <li data-index="1">
+                        <a href="javascript:void(0)">
+                            <img src="img/prod1.jpg" alt="">
+                        </a>
+                        <div>
+                            <span href="javascript:void(0)">$123</span>
+                            <a href="javascript:void(0)">Couch</a>
+                            <span>By <span>Jammy X.</span></span>
+                            <figure>
+                                IKEA Gauranteed
+                            </figure>
+                        </div>
+                    </li>
+                    <li data-index="1">
+                        <a href="javascript:void(0)">
+                            <img src="img/prod2.png" alt="">
+                        </a>
+                        <div>
+                            <span href="javascript:void(0)">$307</span>
+                            <a href="javascript:void(0)">Bed</a>
+                            <span>By <span>Lina Z.</span></span>
+                        </div>
+                    </li>
+                </ul>
+                <div id="total">Total 430$</div>
+                <div id="address">
+                    <h3>Payment Methods</h3>
+                    <p>Credit Card</p>
+                    <p>E-transfer</p>
+                    <p>Point Card</p>
+                    <a href="javascript:void(0)">Next</a>
+                </div>
+            </div>
+            <div class="pages" id="page3">
+                <ul>
+                    <li data-index="1">
+                        <a href="javascript:void(0)">
+                            <img src="img/prod1.jpg" alt="">
+                        </a>
+                        <div>
+                            <span href="javascript:void(0)">$123</span>
+                            <a href="javascript:void(0)">Couch</a>
+                            <span>By <span>Jammy X.</span></span>
+                            <figure>
+                                IKEA Gauranteed
+                            </figure>
+                        </div>
+                    </li>
+                    <li data-index="1">
+                        <a href="javascript:void(0)">
+                            <img src="img/prod2.png" alt="">
+                        </a>
+                        <div>
+                            <span href="javascript:void(0)">$307</span>
+                            <a href="javascript:void(0)">Bed</a>
+                            <span>By <span>Lina Z.</span></span>
+                        </div>
+                    </li>
+                </ul>
+                <div id="total">Total 430$</div>
+                <div id="address">
+                    <h3>Cofirm Information</h3>
+                    <p>To Christopher Nolan</p>
+                    <p>email_by@email.com</p>
+                    <p>+199664455</p>
+                    <a href="javascript:void(0)">Next</a>
+                </div>
+            </div>
+            <div id="page4" class="pages">
+                <div>✓</div>
+                <div>Success</div>
             </div>
         </main>
         <script src="js/main.js"></script>
+        <script src="js/cart.js"></script>
     </body>
 </html>

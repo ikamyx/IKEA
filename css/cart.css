@@ -8,6 +8,20 @@ main {
     padding-bottom: 60px;
 }
 
+main .pages {
+    display: none;
+}
+
+main .pages:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+main .pages.activated {
+    display: block;
+}
+
 /* main:after {
     content: '';
     display: table;
@@ -22,7 +36,7 @@ main h2 {
 }
 
 main ul {
-    margin-top: 30px;
+    margin-top: 55px;
 }
 
 main li {
@@ -148,4 +162,121 @@ main li div figure {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+#stepWizard nav {
+    position: relative;
+    width: 96%;
+    margin-left: 3%;
+    border-bottom: 1px solid #666;
+    margin-top: 15px;
+}
+
+#stepWizard nav:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+#stepWizard nav a {
+    float: left;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+#stepWizard span {
+    font-size: 12px;
+    margin-top: 8px;
+    display: inline-block;
+    color: #bbb;
+}
+
+#stepWizard nav a:first-child:before {
+    border-color: #bbb;
+}
+
+#stepWizard nav a:first-child.activated span {
+    color: #666;
+}
+
+#stepWizard nav a:first-child.activated:before {
+    background-color: #0058ab;
+    border-color: #0058ab;
+}
+
+#stepWizard nav a:nth-child(2).activated span {
+    color: #666;
+}
+
+#stepWizard nav a:nth-child(2).activated:before {
+    background-color: #0058ab;
+    border-color: #0058ab;
+}
+
+#stepWizard nav a:nth-child(3).activated:before {
+    background-color: #0058ab;
+    border-color: #0058ab;
+}
+
+#stepWizard nav a:nth-child(3).activated span {
+    color: #666;
+}
+
+
+#stepWizard nav a:first-child span {
+    margin-left: -9px;
+}
+
+#stepWizard nav a:nth-child(2) {
+    margin-lefT: calc(47% - 15px);
+}
+
+#stepWizard nav a:nth-child(2):before {
+    border-color: #bbb;
+}
+
+#stepWizard nav a:nth-child(2) span {
+    margin-left: -16px;
+}
+
+#stepWizard nav a:nth-child(3) {
+    margin-left: calc(47% - 15px);
+}
+
+#stepWizard nav a:nth-child(3):before {
+    border-color: #bbb;
+}
+
+#stepWizard nav a:nth-child(3) span {
+    margin-left: -16px;
+}
+
+#stepWizard nav a:before {
+    display: block;
+    content: '';
+    height: 15px;
+    width: 15px;;
+    border-radius: 50%;
+    border: 2px solid #666;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+#page4 {
+    height: 200px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#page4 div {
+    font-size: 20px;
+    color: #5aa218;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#page4 div:first-child {
+    font-size: 30px;
 }

@@ -79,15 +79,15 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M15,9a3,3,0,1,1-3-3A3,3,0,0,1,15,9Zm4,0c0,6-7,13-7,13S5,15,5,9A7,7,0,0,1,19,9ZM12,19c2.09-2.49,5-6.68,5-10A5,5,0,0,0,7,9C7,12.35,9.91,16.54,12,19Z" fill="#111111"></path>
                         </svg>
                     </a>
-                    <a class="full" href="javascript:void(0)">
+                    <a class="empty" href="cart.html">
                         <svg xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" class="svg-icon  hnf-svg-icon hnf-svg-bag-default hnf-btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11 4h-.563l-.292.48-3.357 5.517H1.72l.31 1.243 1.621 6.485a3 3 0 002.91 2.272H17.44a3 3 0 002.91-2.272l1.621-6.485.31-1.243h-5.069L13.854 4.48 13.562 4H11zm3.87 5.997L12.438 6h-.876L9.129 9.997h5.741zM5.591 17.24l-1.31-5.243h15.438l-1.31 5.243a1 1 0 01-.97.757H6.562a1 1 0 01-.97-.757z" fill="#111111"></path>
                         </svg>
-                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" class="svg-icon  hnf-svg-icon hnf-svg-bag-added hnf-btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg xmlns:xlink="cart.html" focusable="false" class="svg-icon  hnf-svg-icon hnf-svg-bag-added hnf-btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.437 4h3.125l.292.48 3.357 5.517h5.069l-.31 1.243-.69 2.76h-2.06l.5-2.003H4.281l1.31 5.243a1 1 0 00.97.757H15v2H6.562a3 3 0 01-2.91-2.272L2.03 11.24l-.31-1.243h5.068l3.357-5.517.292-.48zm2 2l2.433 3.997H9.13L11.56 6h.877z" fill="#111111"></path>
                              <path d="M21 17.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" fill="#0058A3"></path>
                         </svg>
-                        <span>2</span></a>
+                        <span></span></a>
                     <a href="javascript:void(0)">
                         <svg xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" class="svg-icon  hnf-svg-icon hnf-btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.672 6.468c.274-.281.68-.47 1.35-.47.397 0 .705.083.953.222.24.134.438.33.593.619l.003.006c.14.254.237.618.237 1.14 0 .786-.204 1.245-.48 1.528l-.004.005c-.276.288-.68.476-1.334.476-.386 0-.696-.082-.956-.224a1.49 1.49 0 01-.589-.614c-.145-.275-.242-.652-.242-1.17 0-.791.204-1.245.47-1.518zm1.35-2.472c-1.084 0-2.054.326-2.784 1.077-.738.758-1.036 1.78-1.036 2.912 0 .766.143 1.483.477 2.112l.004.006a3.488 3.488 0 001.377 1.415l.006.004a3.94 3.94 0 001.924.473c1.082 0 2.048-.333 2.775-1.09.741-.762 1.044-1.785 1.044-2.92 0-.763-.142-1.478-.482-2.1a3.488 3.488 0 00-1.376-1.412c-.585-.328-1.238-.477-1.93-.477zM6.469 16.858a3.25 3.25 0 011.29-1.357c.558-.32 1.283-.505 2.221-.505h4.04c.938 0 1.663.186 2.22.505.568.33.993.777 1.29 1.357.304.59.47 1.294.47 2.138v1h2v-1c0-1.112-.22-2.138-.69-3.052a5.322 5.322 0 00-2.073-2.177c-.927-.532-2.015-.77-3.217-.77H9.98c-1.114 0-2.248.211-3.222.773a5.25 5.25 0 00-2.068 2.174c-.47.914-.69 1.94-.69 3.052v1h2v-1c0-.844.166-1.548.47-2.138z" fill="#111111"></path>
@@ -120,34 +120,94 @@
                 <figure>
                 </figure>
             </section>
+            <section id="breadcrumb">
+                <nav>
+                    <a href="homePage.html">Home</a>
+                    <a href="addProduct.html">Sell back Product</a>
+                </nav>
+            </section>
         </header>
         <main>
-            <h2>Add a product</h2>
-            <form action="submit">
-                <label for="productName">Name</label>
-                <input type="text" id="productName">
-                <label for="productCategory">Category</label>
-                <select name="category" id="productCategory">
-                    <option value="beds">Beds</option>
-                    <option value="couches">Couches</option>
-                    <option value="furniture">Furniture</option>
-                    <option value="tables">Tables</option>
-                    <option value="decoratives">Decoratives</option>
-                  </select>
-                <label for="productPrice">Price</label>
-                <input type="text" id="productPrice">
-                <label for="productSerial">Serial</label>
-                <input type="text" id="productSerial">
-                <label for="productPickupDate">Pickup date</label>
-                <input type="date" id="productPickupDate">
-                <label for="productPhoto">Photo</label>
-                <div id="file">
-                    <input type="file">
-                </div>
-                <div id="photoBox" data-message="no photo"></div>
-                <a href="homePage.html">Submit</a>
-            </form>
+            <h2>Sell back a Product</h2>
+            <div id="stepWizard">
+                <nav>
+                    <a class="activated" href="javascript:void(0)"><span>Details</span></a>
+                    <a href="javascript:void(0)"><span>Payment</span></a>
+                    <a href="javascript:void(0)"><span>Confirm</span></a>
+                </nav>
+            </div>
+            <div id="page1" class="pages activated">
+                <form action="submit">
+                    <label for="productName">Name</label>
+                    <input type="text" id="productName">
+                    <label for="productCategory">Category</label>
+                    <select name="category" id="productCategory">
+                        <option value="beds">Beds</option>
+                        <option value="couches">Couches</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="tables">Tables</option>
+                        <option value="decoratives">Decoratives</option>
+                      </select>
+                    <label for="productPrice">Price</label>
+                    <input type="text" id="productPrice">
+                    <label for="productSerial">Serial</label>
+                    <input type="text" id="productSerial">
+                    <label for="productPhoto">Photo</label>
+                    <div id="file">
+                        <input type="file">
+                    </div>
+                    <div id="photoBox" data-message="no photo"></div>
+                    <a href="javascript:void(0)">Next</a>
+                </form>
+            </div>
+            <div id="page2" class="pages">
+                <form action="submit">
+                    <label for="productName">Name</label>
+                    <input type="text" id="productName">
+                    <label for="productCategory">Category</label>
+                    <select name="category" id="productCategory">
+                        <option value="beds">Beds</option>
+                        <option value="couches">Couches</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="tables">Tables</option>
+                        <option value="decoratives">Decoratives</option>
+                      </select>
+                    <label for="productPrice">Price</label>
+                    <input type="text" id="productPrice">
+                    <label for="productSerial">Serial</label>
+                    <input type="text" id="productSerial">
+                    <label for="productPickupDate">Pickup date</label>
+                    <input type="date" id="productPickupDate">
+                    <a href="javascript:void(0)">Next</a>
+                </form>
+            </div>
+            <div id="page3" class="pages">
+                <form action="submit">
+                    <label for="productName">Name</label>
+                    <input type="text" id="productName">
+                    <label for="productCategory">Category</label>
+                    <select name="category" id="productCategory">
+                        <option value="beds">Beds</option>
+                        <option value="couches">Couches</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="tables">Tables</option>
+                        <option value="decoratives">Decoratives</option>
+                      </select>
+                    <label for="productPrice">Price</label>
+                    <input type="text" id="productPrice">
+                    <label for="productSerial">Serial</label>
+                    <input type="text" id="productSerial">
+                    <label for="productPickupDate">Pickup date</label>
+                    <input type="date" id="productPickupDate">
+                    <a href="javascript:void(0)">Finish</a>
+                </form>
+            </div>
+            <div id="page4" class="pages">
+                <div>✓</div>
+                <div>Success</div>
+            </div>
         </main>
         <script src="js/main.js"></script>
+        <script src="js/addProduct.js"></script>
     </body>
 </html>

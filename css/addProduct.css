@@ -21,8 +21,22 @@ main h2 {
     padding-bottom: 10px;
 }
 
+main .pages {
+    display: none;
+}
+
+main .pages:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+main .pages.activated {
+    display: block;
+}
+
 main form {
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 main form label {
@@ -33,7 +47,7 @@ main form label {
     margin-top: 6px;
 }
 
-main input[type="text"], main select, main input[type="date"] {
+main form input[type="text"], main select, main input[type="date"] {
     float: right;
     width: 70%;
     height: 30px;
@@ -42,17 +56,17 @@ main input[type="text"], main select, main input[type="date"] {
     color: inherit;
 }
 
-main #file {
+main form #file {
     float: right;
     width: 70%;
     overflow: hidden;
 }
 
-main input[type="file"]::-webkit-file-upload-button {
+main form input[type="file"]::-webkit-file-upload-button {
     visibility: hidden;
 }
 
-main input[type="file"]:before {
+main form input[type="file"]:before {
     content: 'Upload a photo';
     display: inline-block;
     background: linear-gradient(top, #f9f9f9, #e3e3e3);
@@ -71,29 +85,29 @@ main input[type="file"]:before {
     font-family: 'Quicksand';
 }
 
-main input[type="file"]:hover:before {
+main form input[type="file"]:hover:before {
     border-color: #fff;
 }
 
-main input[type="file"]:active::before {
+main form input[type="file"]:active::before {
     background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
-main select {
+main form select {
     padding-left: 10px;
     outline: none;
 }
 
-select::-ms-expand {
+main form select::-ms-expand {
     display: none;
   }
 
-main select option {
+main form select option {
     display: block;
     height: 30px;
 }
 
-main #photoBox {
+main form #photoBox {
     clear: both;
     width: 70%;
     padding-bottom: calc(70%);
@@ -103,7 +117,7 @@ main #photoBox {
     position: relative;
 }
 
-main #photoBox:before {
+main form #photoBox:before {
     content: attr(data-message);
     position: absolute;
     top: 50%;
@@ -112,7 +126,7 @@ main #photoBox:before {
 
 }
 
-main a {
+main form a {
     margin-top: 20px;
     clear: both;
     width: 50%;
@@ -126,4 +140,121 @@ main a {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+#stepWizard nav {
+    position: relative;
+    width: 96%;
+    margin-left: 3%;
+    border-bottom: 1px solid #666;
+    margin-top: 15px;
+}
+
+#stepWizard nav:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+#stepWizard nav a {
+    float: left;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+#stepWizard span {
+    font-size: 12px;
+    margin-top: 8px;
+    display: inline-block;
+    color: #bbb;
+}
+
+#stepWizard nav a:first-child:before {
+    border-color: #bbb;
+}
+
+#stepWizard nav a:first-child.activated span {
+    color: #666;
+}
+
+#stepWizard nav a:first-child.activated:before {
+    background-color: #0058ab;
+    border-color: #0058ab;
+}
+
+#stepWizard nav a:nth-child(2).activated span {
+    color: #666;
+}
+
+#stepWizard nav a:nth-child(2).activated:before {
+    background-color: #0058ab;
+    border-color: #0058ab;
+}
+
+#stepWizard nav a:nth-child(3).activated:before {
+    background-color: #0058ab;
+    border-color: #0058ab;
+}
+
+#stepWizard nav a:nth-child(3).activated span {
+    color: #666;
+}
+
+
+#stepWizard nav a:first-child span {
+    margin-left: -9px;
+}
+
+#stepWizard nav a:nth-child(2) {
+    margin-lefT: calc(47% - 15px);
+}
+
+#stepWizard nav a:nth-child(2):before {
+    border-color: #bbb;
+}
+
+#stepWizard nav a:nth-child(2) span {
+    margin-left: -16px;
+}
+
+#stepWizard nav a:nth-child(3) {
+    margin-left: calc(47% - 15px);
+}
+
+#stepWizard nav a:nth-child(3):before {
+    border-color: #bbb;
+}
+
+#stepWizard nav a:nth-child(3) span {
+    margin-left: -16px;
+}
+
+#stepWizard nav a:before {
+    display: block;
+    content: '';
+    height: 15px;
+    width: 15px;;
+    border-radius: 50%;
+    border: 2px solid #666;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+#page4 {
+    height: 200px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#page4 div {
+    font-size: 20px;
+    color: #5aa218;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#page4 div:first-child {
+    font-size: 30px;
 }
