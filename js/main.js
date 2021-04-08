@@ -55,3 +55,9 @@ document.querySelector('#search a').addEventListener("click", () => {
     document.body.classList.add('overlay');
     document.querySelector("#searchExpand").classList.add('show');
 })
+
+document.querySelector(".productCarousel#normalProduct li:nth-child(2) > a:last-child").addEventListener("click", () => {
+    document.querySelector("#topNav nav a:nth-child(2)").classList.remove("empty");
+    document.querySelector("#topNav nav a:nth-child(2) span").innerHTML = "1";
+    document.querySelector("#topNav nav a:nth-child(2)").classList.add("full");
+})

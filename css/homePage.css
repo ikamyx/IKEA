@@ -465,7 +465,7 @@ main {
 }
 
 .productCarousel#recommendedProductRow2 li:first-child > a:first-child img {
-    top: -240px;
+    top: 0;
     left: -30px
 }
 
@@ -484,7 +484,9 @@ main {
 }
 
 .productCarousel#recommendedProductRow3 li:nth-child(2) > a:first-child img {
-    top: -42px;
+    height: 200px;
+    width: auto;
+    top: 0;
     left: 0px
 }
 
