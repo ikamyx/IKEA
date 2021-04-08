@@ -128,7 +128,7 @@
             </section>
         </header>
         <main>
-            <h2>Sell back a Product</h2>
+            <h2>Sell back</h2>
             <div id="stepWizard">
                 <nav>
                     <a class="activated" href="javascript:void(0)"><span>Details</span></a>
@@ -155,6 +155,7 @@
                     <label for="productPhoto">Photo</label>
                     <div id="file">
                         <input type="file">
+                        <input type="file">
                     </div>
                     <div id="photoBox" data-message="no photo"></div>
                     <a href="javascript:void(0)">Next</a>
@@ -162,43 +163,36 @@
             </div>
             <div id="page2" class="pages">
                 <form action="submit">
-                    <label for="productName">Name</label>
+                    <label for="productName">Bank</label>
                     <input type="text" id="productName">
-                    <label for="productCategory">Category</label>
+                    <label for="productCategory">Method</label>
                     <select name="category" id="productCategory">
-                        <option value="beds">Beds</option>
-                        <option value="couches">Couches</option>
-                        <option value="furniture">Furniture</option>
-                        <option value="tables">Tables</option>
-                        <option value="decoratives">Decoratives</option>
+                        <option value="beds">Credit card</option>
+                        <option value="couches">Visa</option>
+                        <option value="furniture">Bitcoin</option>
+                        <option value="tables">E-Transfer</option>
                       </select>
                     <label for="productPrice">Price</label>
                     <input type="text" id="productPrice">
-                    <label for="productSerial">Serial</label>
-                    <input type="text" id="productSerial">
-                    <label for="productPickupDate">Pickup date</label>
+                    <label for="productPickupDate">Expiry date</label>
                     <input type="date" id="productPickupDate">
                     <a href="javascript:void(0)">Next</a>
                 </form>
             </div>
             <div id="page3" class="pages">
                 <form action="submit">
-                    <label for="productName">Name</label>
+                    <label for="productName">Received by</label>
                     <input type="text" id="productName">
-                    <label for="productCategory">Category</label>
+                    <label for="productCategory">Fulfield by</label>
                     <select name="category" id="productCategory">
-                        <option value="beds">Beds</option>
-                        <option value="couches">Couches</option>
-                        <option value="furniture">Furniture</option>
-                        <option value="tables">Tables</option>
-                        <option value="decoratives">Decoratives</option>
+                        <option value="beds">IKEA</option>
+                        <option value="couches">Market place</option>
+                        <option value="furniture">Both</option>
                       </select>
-                    <label for="productPrice">Price</label>
+                    <label for="productPrice">Signature</label>
                     <input type="text" id="productPrice">
-                    <label for="productSerial">Serial</label>
+                    <label for="productSerial">Phone No</label>
                     <input type="text" id="productSerial">
-                    <label for="productPickupDate">Pickup date</label>
-                    <input type="date" id="productPickupDate">
                     <a href="javascript:void(0)">Finish</a>
                 </form>
             </div>

@@ -14,3 +14,7 @@ document.querySelector("#page3 form a").addEventListener("click", () => {
     document.querySelector("#page4").classList.add("activated");
     document.querySelector("#page3").classList.remove("activated");
 })
+
+document.querySelector("#page1 form input[type='file'").addEventListener("change", () => {
+    document.querySelector("#page1 #photoBox").classList.add("load");
+})

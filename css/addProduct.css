@@ -66,7 +66,7 @@ main form input[type="file"]::-webkit-file-upload-button {
     visibility: hidden;
 }
 
-main form input[type="file"]:before {
+main form input[type="file"]:first-child:before {
     content: 'Upload a photo';
     display: inline-block;
     background: linear-gradient(top, #f9f9f9, #e3e3e3);
@@ -83,6 +83,29 @@ main form input[type="file"]:before {
     /* font-weight: 700; */
     font-size: 10pt;
     font-family: 'Quicksand';
+    width: 100px;
+}
+
+main form input[type="file"]:nth-child(2):before {
+    content: 'Take a photo';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    background: #888;
+    /* border: 1px solid #999; */
+    border-radius: 3px;
+    padding: 8px 18px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    /* text-shadow: 1px 1px #fff; */
+    color: #fff;
+    /* font-weight: 700; */
+    font-size: 10pt;
+    font-family: 'Quicksand';
+    margin-top: 10px;
+    width: 100px;
+    margin-bottom: 20px;
 }
 
 main form input[type="file"]:hover:before {
@@ -115,6 +138,11 @@ main form #photoBox {
     border: 1px dashed grey;
     float: right;
     position: relative;
+}
+
+main form #photoBox.load {
+    background-image: url(../img/prod10.jpg);
+    background-size: contain;
 }
 
 main form #photoBox:before {
